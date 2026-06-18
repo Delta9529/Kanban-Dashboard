@@ -5,21 +5,9 @@ export default function TaskComponent({ setTask }) {
     const [taskData, setTaskData] = useState({
         task: '',
         status: 'todo'
-        // tags: []
     });
 
-    // const selectTag = (tag) => {
-    //     if (taskData.tags.some(item => item === tag)) {
-    //         const filtertag = taskData.tags.filter(item => item !== tag);
-    //         setTaskData(prev => ({ ...prev, tags: filtertag }));
-    //     } else {
-    //         setTaskData(prev => ({ ...prev, tags: [...prev.tags, tag] }));
-    //     }
-    // }
 
-    // const selected = (tag) => {
-    //     return taskData.tags.some(item => item === tag);
-    // }
 
     const handleTaskInput = (e) => {
         const { name, value } = e.target;
@@ -30,10 +18,9 @@ export default function TaskComponent({ setTask }) {
         e.preventDefault();
         if (!taskData.task.trim()) return;
 
-        // Wait for the task to be saved to the backend first
         await setTask(taskData);
 
-        // Then reset the form
+        // reset the form
         setTaskData({ task: '', status: 'todo' });
     }
 

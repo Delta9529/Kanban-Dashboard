@@ -40,8 +40,7 @@ app.post("/api/tasks", async (req, res) => {
     const db = await getDB();
     db.run("INSERT INTO tasks (task, status) VALUES (?, ?)", [
       task,
-      status || "todo",
-      JSON.stringify(tags || []),
+      status || "todo"
     ]);
     saveDB();
 
