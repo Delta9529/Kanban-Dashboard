@@ -5,7 +5,7 @@ import Todo from './assets/direct-hit.png';
 import deleteicon from './assets/delete.png';
 import './App.css';
 
-const API = 'http://localhost:3001/api';
+const API = 'https://kanban-dashboard-spo7.onrender.com';
 
 function App() {
   const [task, setTask] = useState([]);
