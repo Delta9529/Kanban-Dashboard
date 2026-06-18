@@ -1,0 +1,9 @@
+.task_column_icon {
+    height: 3rem;
+    padding: 5px 25px 8px 25px;
+}
+
+.task_column_heading {
+    display: flex;
+    align-items: center;
+}

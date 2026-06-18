@@ -1,0 +1,32 @@
+.deleteicon {
+    width: 35px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Card_Heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.task_card {
+    border: 1px dotted black;
+}
+
+.deleteicon:hover {
+    background-color:rgb(240, 237, 237);
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+
